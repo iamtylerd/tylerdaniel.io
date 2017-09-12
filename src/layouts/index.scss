@@ -617,6 +617,27 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.menuWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.logo-item {
+  text-decoration: none;
+  color: darkgrey;
+}
+
+.menu-item {
+  margin-left: .5rem;
+  color: grey;
+}
+
+
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
