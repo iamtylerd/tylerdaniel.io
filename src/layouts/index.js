@@ -33,6 +33,12 @@ const Header = () =>
           </Link>
           <Link
             className="menu-item"
+            to="/blog"
+          >
+            Blog
+          </Link>
+          <Link
+            className="menu-item"
             to="/contact"
           >
             Contact
