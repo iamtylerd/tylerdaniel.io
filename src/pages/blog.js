@@ -18,13 +18,18 @@ const BlogPage = ({data}) =>
 
 export const pageQuery = graphql`
   query BlogQuery {
-      allMarkdownRemark(limit: 10) {
+      allMarkdownRemark(
+        limit: 10
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { frontmatter: { published: { eq: true } } }
+      ) {
         edges {
           node {
             id
             frontmatter {
               title
               path
+              date
             }
           }
         }
